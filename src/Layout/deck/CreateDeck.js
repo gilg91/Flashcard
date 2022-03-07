@@ -19,12 +19,8 @@ function CreateDeck() {
   const history = useHistory();
 
   const handleSubmit = (event) => {
-    console.log("formData", formData)
     event.preventDefault();
-    createDeck(formData)
-//       .then((result) => history.push(`/decks/${result.id}`));
-//       .then(console.log("hiiiii"));
-    .then(res => console.log(res));
+    createDeck(formData).then((result) => history.push(`/decks/${result.id}`));
   };
 
   return (

@@ -14,7 +14,7 @@ function DisplayDeck() {
     );
     if (confirmation) {
       await deleteDeck(id);
-      history.go(0);
+      history.go(-2);
     }
   };
 
